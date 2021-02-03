@@ -33,11 +33,11 @@ $ ./tree-md .
  
  * [app]
    * [templates]
-      * [go.html] # main page of web app
-      * [master.html] # classification result page of web app
-   * [run.py]
+      * go.html # main page of web app
+      * master.html # classification result page of web app
+   * run.py
    
- * [data]
+ * data
    * [disaster_categories.csv] # data to process 
    * [disaster_messages.csv] # data to process
    * [process_data.py]
