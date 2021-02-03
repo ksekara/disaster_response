@@ -29,38 +29,24 @@ This Project is based on data provided by figure eight. This data contains the m
 In this repository following files included:
 
 $ ./tree-md .
-# Project tree
-
 .
- * [app](./tree-md)
+ 
  * [app]
    * [templates]
-      *
-   * [file22.ext](./dir2/file22.ext)
-   * [file23.ext](./dir2/file23.ext)
- * [dir1](./dir1)
-   * [file11.ext](./dir1/file11.ext)
-   * [file12.ext](./dir1/file12.ext)
- * [file_in_root.ext](./file_in_root.ext)
- * [README.md](./README.md)
- * [dir3](./dir3)
-$ tree
-.
-├──app
-    ├── templates
-        ├── master.html  # main page of web app
-        └──go.html  # classification result page of web app
-   - run.py  # Flask file that runs app
-
-- data
--|- disaster_categories.csv  # data to process 
--|- disaster_messages.csv  # data to process
--|- process_data.py
--|- InsertDatabaseName.db   # database to save clean data to
-
-- models
--|- train_classifier.py
--|- classifier.pkl  # saved model 
+      *[go.html] # main page of web app
+      *[master.html] # classification result page of web app
+   * [run.py]
+   
+ * [data]
+   * [disaster_categories.csv] # data to process 
+   * [disaster_messages.csv] # data to process
+   * [process_data.py]
+   * [DisasterResponse.db] # database to save clean data to
+   
+ * [models]
+ * [train_classifier.py]
+ 
+lassifier.pkl  # saved model 
 
 ## Instructions<a name="instr"></a>
  - To run ETL pipeline that cleans data and stores in database
