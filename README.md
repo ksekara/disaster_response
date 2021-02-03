@@ -28,7 +28,7 @@ This Project is based on data provided by figure eight. This data contains the m
 ## File Descriptions <a name="files"></a>
 In this repository following files included:
 
-$ ./tree-md .
+
 
  
  * app
@@ -46,7 +46,7 @@ $ ./tree-md .
  * models
  * train_classifier.py
  
-lassifier.pkl  # saved model 
+
 
 ## Instructions<a name="instr"></a>
  - To run ETL pipeline that cleans data and stores in database
