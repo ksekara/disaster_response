@@ -28,10 +28,10 @@ This Project is based on data provided by figure eight. This data contains the m
 ## File Descriptions <a name="files"></a>
 In this repository following files included:
 - app
--| - templates
--| |- master.html  # main page of web app
--| |- go.html  # classification result page of web app
--|- run.py  # Flask file that runs app
+ - templates
+    - master.html  # main page of web app
+    - go.html  # classification result page of web app
+ - run.py  # Flask file that runs app
 
 - data
 -|- disaster_categories.csv  # data to process 
