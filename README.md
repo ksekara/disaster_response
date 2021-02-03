@@ -4,43 +4,52 @@
 1. [Installation](#installation)
 2. [Project Motivation](#motivation)
 3. [File Descriptions](#files)
-4. [Results](#results)
+4. [Instructions](#instr)
 5. [Licensing, Authors, and Acknowledgements](#licensing)
 
 ## Installation <a name="installation"></a>
-- python 3.7.7
-- scikit-learn 0.23.1
-- seaborn 0.10.1
-- matplotlib 3.3.1
-- numpy 1.18.5
-- pandas 1.1.0
+- json
+- plotly
+- pandas
+- flask
+- sqlalchemy
+- ntlk
+- numpy
 
 ## Project Motivation<a name="motivation"></a>
 
-This Project is based on Airbnb Seattle data provded by [kaggle.com](https://www.kaggle.com/airbnb/seattle). Using the data following business questions were answered:
+This Project is based on data provided by figure eight. This data contains the messages sent by people during natural disaster which can be analyze for future prediction:
 
-1. What are the type of properties that are listing in?
-2. Neighborhood wise price distribution
-3. How is the price correlated with other numerical independent variables ?
-4. How does the price vary with geographically ?
-5. Can I make a model that predict the price?
+1. Who are the people should be given priority during disaster
+2. Categories type emergencies.
+3. Identify situtation and repsonse in minimum time.
 
 ## File Descriptions <a name="files"></a>
 In this repository following files included:
-- examine_the_data.ipynb - above mentioned business questions wered answered using visualization
-- Data_modeling.ipynb - this notebook contains the machine learning model building and evaluation
-- Data Folder - this folder contains the all neccessary data and file use for the model
-  - calendar.csv - including listing id and the price and availability for that day
-  - listings.csv - including full descriptions and average review score
-  - reviews.csv - including unique id for each reviewer and detailed comments
-  - seattle.png - map of seattle area
+- app
+| - templates
+| |- master.html  # main page of web app
+| |- go.html  # classification result page of web app
+|- run.py  # Flask file that runs app
 
-## Results<a name="results"></a>
+- data
+|- disaster_categories.csv  # data to process 
+|- disaster_messages.csv  # data to process
+|- process_data.py
+|- InsertDatabaseName.db   # database to save clean data to
 
-The main findings of the code can be found at the post available @ [Medium](https://ksekara.medium.com/deep-dive-into-seattle-airbnb-data-f198143f6492).
+- models
+|- train_classifier.py
+|- classifier.pkl  # saved model 
 
+## Instructions<a name="instr"></a>
+ - To run ETL pipeline that cleans data and stores in database
+        `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
+ - To run ML pipeline that trains classifier and saves
+        `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
+T
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
-Credit to Airbnb for providing the data. Licensing information can be found at the [Kaggle page](https://www.kaggle.com/airbnb/seattle) and the original source from [Airbnb Inside](http://insideairbnb.com/get-the-data.html).
+Credit to figure eight for providing the data and Udacity for guidance and instructions. 
 
 
   
