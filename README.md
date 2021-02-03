@@ -31,20 +31,20 @@ In this repository following files included:
 $ ./tree-md .
 
  
- * [app]
-   * [templates]
+ * app
+   * templates
       * go.html # main page of web app
       * master.html # classification result page of web app
    * run.py
    
  * data
-   * [disaster_categories.csv] # data to process 
-   * [disaster_messages.csv] # data to process
-   * [process_data.py]
-   * [DisasterResponse.db] # database to save clean data to
+   * disaster_categories.csv # data to process 
+   * disaster_messages.csv # data to process
+   * process_data.py
+   * DisasterResponse.db # database to save clean data to
    
- * [models]
- * [train_classifier.py]
+ * models
+ * train_classifier.py
  
 lassifier.pkl  # saved model 
 
