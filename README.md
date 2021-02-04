@@ -57,5 +57,5 @@ In this repository following files included:
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 Credit to figure eight for providing the data and Udacity for guidance and instructions. 
 
-
+[contact]#https://github.com/ksekara/disaster_response
   
